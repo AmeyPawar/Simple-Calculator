@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c,d;
+    cout<<"\t\t\t\t*************************\n";
+    cout<<"\t\t\t\t********CALCULATOR*******\n";
+        cout<<"\t\t\t\t*************************\n";
+    cout<<"\t\tEnter your first number:";
+    cin>>a;
+    cout<<"\t\tEnter your second number:";
+    cin>>b;
+    
+    cout<<"\t\t***Select operation to perform***\n";
+    cout<<"\t\tPress '1'For Addition "<<endl;
+    cout<<"\t\tPress '2' For Subtraction"<<endl;
+    cout<<"\t\tPress '3' For Multiplication"<<endl;
+    cout<<"\t\tPress '4' For Division"<<endl;
+    cin>>d;
+    if(d==1){
+        c=a+b;
+        cout<<"\t\tAddition is:"<<c;
+    }
+    else if(d==2){
+        c=a-b;
+         cout<<"Subtration is is: "<<c;
+    }
+    else if(d==3){
+       
+        c=a*b;
+         cout<<"\t\tMultiplication is: "<<c;
+    }
+    else if(d==4){
+         if(b==0){
+            cout<<"\t\tException found!"<<endl;
+            cout<<"Operation cannot perform"<<endl;
+        }
+        else{
+        c=a/b;
+         cout<<"\t\tDivision is: "<<c;
+    }
+    }
+   
+    else{
+        cout<<"\t\tOperation cannot perform"<<endl;
+    }
+ 
+   
+   
+    return 0;
+    
+    
+}
